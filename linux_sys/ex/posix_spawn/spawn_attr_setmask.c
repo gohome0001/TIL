@@ -49,7 +49,7 @@ int main()
         fprintf(stderr, "Fail: spawnattr_setsigmask: %s\n", buf_err);
         exit(EXIT_FAILURE);
     }
-    for(i=2;i--;)
+    for(i=2; i> 0; i--)
     {
         ret_err = posix_spawn(&pid_child[i_child++],
 		   argv_child_1[0],
@@ -69,7 +69,7 @@ int main()
         fprintf(stderr, "Fail: spawnattr_setsigmask: %s\n", buf_err);
         exit(EXIT_FAILURE);
     }
-    for(i=2;; i--)
+    for(i=2; i>0; i--)
     {
         ret_err = posix_spawn( &pid_child[i_child++],
 		   argv_child_2[0],
