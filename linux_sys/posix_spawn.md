@@ -11,6 +11,9 @@ linux system programming
     + 중간중간에 간략하게 설명 나올 것이다.
 + C 언어 기본지식 등 
 
+
++ 함수는 get/set으로 이루어진 경우, set만 설명한게 많음 (이후에 추가..?)
+
 ------------------------
 
 child process create - LINUX
@@ -170,18 +173,30 @@ setflags로 플래그를 설정한다.
 
     -------
 
+    ## 스케줄링 관련 속성은 이후에 다루는걸로
+    + 이쪽 내용보다 리얼타임 Extension에 대한 내용이라 함
     <br>
 
     + <code>POSIX_SPAWN_SETSCHEDPARAM</code><br><br>
 
-    + <code>posix_spawnattr_setschedparam</code><br><br>
+        posix_spawn_attr_t 구조체의 스케줄링 파라미터 속성 활성화<br/>
+        이후 아래 함수로 속성 설정
 
-    <br>
+    + <code>posix_spawnattr_setschedparam</code><br>
     
-    ------
-
+    ```c
+    int posix_spawnattr_setschedparam (posix_spawnattr_t* restrict attr, 
+            const struct sched_param* restrict schedparam);
+    ```
     <br>
 
-    + <code>POSIX_SPAWN_SETSCHEDULER</code><br><br>
+    + <code>POSIX_SPAWN_SETSCHEDULER</code><br>
+
+        스케줄링 정책 속성 활성화<br/>
+        이후 아래 함수로 설정
 
     + <code>posix_spawn_setschedpolicy</code><br><br>
+    ```c
+    int posix_spawnattr_setschedpolicy (posix_spawnattr_t* restrict attr,
+            const struct sched_param* restrict schedparam);
+    ```
