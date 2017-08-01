@@ -148,7 +148,7 @@ flag 레지스터의 크기
     + 최하위 바이트에서 1 개수가 짝수면 1로 설정됨
 + AF (보조 캐리 플래그 - Auxiliary Carry)
     + BCD 연산 결과 캐리 또는 빌림이 필요한 경우 1로 설정됨
-        + ## BCD 연산?? 추가예정
+        + BCD (Binary coded Decimal) - 10진수를 2진수로 변환시 연산
 + ## ZF (Zero Flag)
     + 명령 실행 결과가 0이면 설정
     + 많은 비교 명령에서 ZF에 리턴값 설정
@@ -185,12 +185,11 @@ flag 레지스터의 크기
     + R10, R11
         + 호출자가 필요에 따라 보존할 수 있음. syscall, sysret 명령에 사용된다
     + XMM0~5, YMM0~5
-        + ## ?? 추가예정
+        + SSE(Streaming SIMD Extention), 확장 명령어 set이다. 여기서의 명령어 실행을 위해 필요하다.
 + ## 비휘발성
     + R12~R15
     + RDI, RSI, RBX, RBP, RSP
     + XMM6~15, YMM6~15
-        + ## ?? 추가예정
 
 -------------------------
 EOF
