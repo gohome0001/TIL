@@ -1,8 +1,11 @@
 TIL
 =====
 
-NAME IS DESCRIPTION<br>
-Today I Learned!<br>
+NAME IS DESCRIPTION
+
+Today I Learned!
+
+Anything I did will be uploaded..
 
 ### Writing things that I'm working(studying) on
 
