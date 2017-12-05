@@ -1,10 +1,11 @@
 Reverse Engineering
 ==================
 
-교재
+Reference
 + <IT EXPERT 리버스 엔지니어링 1,2> - 이호동
++ <리버스 엔지니어링 바이블> - 강병탁
 
 목표
 + PE editor 구현
-+ Disassembler "외부" Library 없이 구현
-+ 디버거 개발 (책의 목표)
++ Disassemble 기능 구현
++ 디버..거?
