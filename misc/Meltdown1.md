@@ -47,7 +47,7 @@ Meltdown Attack을 이해하기 위해
 
 여기에 추가로, Kernel process의 가상 메모리에는 전체/일부 physical memory가 매핑되어 있습니다.
 
-![address_space](/img/address_space.PNG)
+![address_space](/img/address_space.png)
 ( 출처 : [Meltdown official Paper](https://meltdownattack.com/meltdown.pdf) )
 
 위 사진은 Linux와 OS X에 해당되는 개념입니다. 
@@ -66,7 +66,7 @@ Windows같은 경우에는 조금 다릅니다. Windows는 kernel process 공간
 
 컴퓨터의 메모리 계층은 다음과 같습니다.
 
-![memory_hierarchy](/img/memory_hierarchy.jpg)
+![memory_hierarchy](/img/memory hierarchy.jpg)
 
 (출처 : [여기](http://www.moreprocess.com/devices/computer-memory-hierarchy-internal-register-cache-ram-hard-disk-magnetic-tape) )
 
