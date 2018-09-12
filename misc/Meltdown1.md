@@ -66,7 +66,7 @@ Windows같은 경우에는 조금 다릅니다. Windows는 kernel process 공간
 
 컴퓨터의 메모리 계층은 다음과 같습니다.
 
-![memory_hierarchy](/img/memory hierarchy.jpg)
+![memory_hierarchy](/img/memory_hierarchy.jpg)
 
 (출처 : [여기](http://www.moreprocess.com/devices/computer-memory-hierarchy-internal-register-cache-ram-hard-disk-magnetic-tape) )
 
