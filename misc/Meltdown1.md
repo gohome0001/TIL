@@ -18,7 +18,7 @@
 
 우리가 사용하는 대부분의 프로세서(CPU), 운영체제는 `가상 메모리`로 각 프로세스의 메모리를 관리합니다.
 
-![virt_mem](/uploads/3d647b86ef8a0efbfde016d693eb3d1d/virt_mem.png)
+![virt_mem](/img/virt_mem.png)
 
 user process에서 kernel 기능을 사용할 때 overhead를 줄이기 위해서, 위의 그림처럼 모든 프로세스의 가상 메모리에는 kernel 프로세스가 매핑되어 ~~있습니다~~있었습니다.
 
@@ -47,7 +47,7 @@ Meltdown Attack을 이해하기 위해
 
 여기에 추가로, Kernel process의 가상 메모리에는 전체/일부 physical memory가 매핑되어 있습니다.
 
-![address_space](/uploads/1dd135ddb591ec9e3046528f1fbd9a87/address_space.PNG)
+![address_space](/img/address_space.PNG)
 ( 출처 : [Meltdown official Paper](https://meltdownattack.com/meltdown.pdf) )
 
 위 사진은 Linux와 OS X에 해당되는 개념입니다. 
@@ -66,7 +66,7 @@ Windows같은 경우에는 조금 다릅니다. Windows는 kernel process 공간
 
 컴퓨터의 메모리 계층은 다음과 같습니다.
 
-![memory_hierarchy](/uploads/5afe5d23abed70f8f219bc5e85f41ac7/memory_hierarchy.jpg)
+![memory_hierarchy](/img/memory_hierarchy.jpg)
 
 (출처 : [여기](http://www.moreprocess.com/devices/computer-memory-hierarchy-internal-register-cache-ram-hard-disk-magnetic-tape) )
 
@@ -110,7 +110,7 @@ mov ecx, eax
 
 다음에 실행되리라 예측되는 경로에 있는 명령어들 중 의존성이 없는(즉시 실행될 수 있는) 명령어를 미리 실행해 둡니다. x86 architecture에서의 구체적인 과정은 다음과 같습니다.
 
-![processor](/uploads/705831ad78de758136cbaa1e398662b7/processor.png)
+![processor](/img/processor.png)
 
 (간략하게 표현된 그림입니다)
 
