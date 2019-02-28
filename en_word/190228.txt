@@ -1,0 +1,3 @@
+tolerate - 용인하다, 참다, 견디다
+penetrate - 뚫고 들어가다
+exfiltration - 유출, 밀매
