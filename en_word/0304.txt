@@ -1,0 +1,2 @@
+burden : 부담
+accompany : 동반하다
